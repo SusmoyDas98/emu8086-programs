@@ -10,12 +10,12 @@
 ; declare variables here
 ; variables are stored in the memory's data segment       
 
-;X DB 10
-;NUM DW 12
-;CHR DB "a"
-;STR DB "Hello$"                
-;; defining empty variable
-;SUM DB ?                      
+X DB 10
+NUM DW 12
+CHR DB "a"
+STR DB "Hello$"                
+; defining empty variable
+SUM DB ?                      
 
 
 
@@ -41,26 +41,26 @@ MOV DS, AX
 ; BASIC OPERATIONS 
 ;--------------
 
-
-;MOV AX, 10 ; AX = 1010/A                
-;MOV BX, AX ; CAN MOVE 
-;;MOV CL, AX ; CL -> control reg (low) 8 bit , but AX -> 16 bit, hence not possible
-;MOV AL, X ; AL->8 bit  
-;MOV SUM, AL
-;MOV AL, NUM ; WOULD NOT WORK, BECAUSE NUM->32 BIT , AL ->  8 BIT
+              
+MOV AX, 10 ; AX = 1010/A                
+MOV BX, AX ; CAN MOVE 
+;MOV CL, AX ; CL -> control reg (low) 8 bit , but AX -> 16 bit, hence not possible
+MOV AL, X ; AL->8 bit  
+MOV SUM, AL
+MOV AL, NUM ; WOULD NOT WORK, BECAUSE NUM->32 BIT , AL ->  8 BIT
            
            
 ;--------------
 ; ADDITION 
 ;--------------
 
+  
+MOV AX, 10
+ADD AX, 2
 
-;MOV AX, 10
-;ADD AX, 2
-;
-;MOV BX, 10
-;MOV DX, 2
-;ADD BX, DX
+MOV BX, 10
+MOV DX, 2
+ADD BX, DX
            
            
 ;--------------
@@ -68,12 +68,12 @@ MOV DS, AX
 ;--------------
 
 
-;MOV AX, 10
-;SUB AX, 2
-;
-;MOV BX, 10
-;MOV DX, 2
-;SUB BX, DX
+MOV AX, 10
+SUB AX, 2
+
+MOV BX, 10
+MOV DX, 2
+SUB BX, DX
            
            
 ;--------------
@@ -81,8 +81,8 @@ MOV DS, AX
 ;--------------
 
 
-;MOV AX, 10
-;DEC AX
+MOV AX, 10
+DEC AX
 
            
            
@@ -91,8 +91,8 @@ MOV DS, AX
 ;--------------
 
 
-;MOV AX, 10
-;INC AX
+MOV AX, 10
+INC AX
 
 
 ;--------------
@@ -100,8 +100,8 @@ MOV DS, AX
 ;--------------
 
 
-;MOV AX, 10
-;NEG AX      
+MOV AX, 10
+NEG AX      
 
 
 ;--------------
@@ -109,9 +109,9 @@ MOV DS, AX
 ;--------------
 
 
-;MOV AL, A           
-;MOV BL, B      
-;SUB AL, BL      
+MOV AL, A           
+MOV BL, B      
+SUB AL, BL      
 
 
 ;--------------
@@ -122,9 +122,9 @@ MOV DS, AX
 ;--------------
 
 
-;MOV AL, 012H
-;MOV BL, 013H
-;MUL BL
+MOV AL, 012H
+MOV BL, 013H
+MUL BL
 
 
 ;--------------
@@ -136,9 +136,9 @@ MOV DS, AX
 ;--------------
 
 
-;MOV AX, 036DFH
-;MOV BX, 0AFH
-;MUL BX          
+MOV AX, 036DFH
+MOV BX, 0AFH
+MUL BX          
 
 
 ;--------------
@@ -153,9 +153,9 @@ MOV DS, AX
 ;--------------
 
 
-;MOV AX, 13
-;MOV BL, 4
-;DIV BL
+MOV AX, 13
+MOV BL, 4
+DIV BL
  
 
 ;--------------
