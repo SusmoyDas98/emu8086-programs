@@ -116,12 +116,14 @@ INT 21H
 JMP EXIT ; UNCONDITIONAL JUMP                     
 
 IF: 
+;print("a is greater")
 LEA DX, string3
 MOV AH, 9
 INT 21H    
 JMP EXIT ; UNCONDITIONAL JUMP  
 
 ELSE_IF:
+;print("b is greater")
 LEA DX, string4
 MOV AH, 9
 INT 21H         
